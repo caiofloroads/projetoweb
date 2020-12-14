@@ -21,11 +21,7 @@ import { MainToolbarComponent } from './ui/main-toolbar/main-toolbar.component';
 import { MainMenuComponent } from './ui/main-menu/main-menu.component';
 import { MainFooterComponent } from './ui/main-footer/main-footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CursoListComponent } from './curso/curso-list/curso-list.component';
-import { CursoFormComponent } from './curso/curso-form/curso-form.component';
-import { FormsModule } from '@angular/forms';
-import { TurmaListComponent } from './turma/turma-list/turma-list.component';
-import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
+import { FichaListComponent } from './ficha/ficha-list/ficha-list.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +29,8 @@ import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
     MainToolbarComponent,
     MainMenuComponent,
     MainFooterComponent,
-    CursoListComponent,
-    CursoFormComponent,
-    TurmaListComponent,
-    TurmaFormComponent
+    FichaListComponent
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +38,6 @@ import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule,
     MatMomentDateModule,
     NgxMaskModule.forRoot()
   ],
