@@ -22,6 +22,7 @@ import { MainMenuComponent } from './ui/main-menu/main-menu.component';
 import { MainFooterComponent } from './ui/main-footer/main-footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FichaListComponent } from './ficha/ficha-list/ficha-list.component';
+import { FichaFormComponent } from './ficha/ficha-form/ficha-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FichaListComponent } from './ficha/ficha-list/ficha-list.component';
     MainToolbarComponent,
     MainMenuComponent,
     MainFooterComponent,
-    FichaListComponent
+    FichaListComponent,
+    FichaFormComponent
 
   ],
   imports: [

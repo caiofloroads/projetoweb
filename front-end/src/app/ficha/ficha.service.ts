@@ -8,10 +8,16 @@ import { environment } from 'src/environments/environment';
 export class FichaService {
 
   private server = environment.apiServer
+  private apiUrl = this.server + 'ficha'
 
   constructor(private http : HttpClient) { }
 
   listar() {
-      this.http.get(this.server + 'ficha').toPromise()
+      return this.http.get(this.apiUrl).toPromise()
+  }
+
+  excluir(id: string) {
+      return this.http.request('DELETE', this.apiUrl, {body: {_id:id}}).toPromise()
+
   }
 }
